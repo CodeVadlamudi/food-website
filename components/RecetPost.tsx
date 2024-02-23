@@ -38,7 +38,7 @@ function RecetPost() {
             </div>
 
             <div className="py-5 space-y-5">
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center">
                 <div className="w-16 relative">
                   <Image
                     src={item.avatar}
