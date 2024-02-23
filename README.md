@@ -14,6 +14,6 @@ bun dev
 
 # food-website
 
-## Please Click
+## Please visit the below 👇
 
 ### https://food-website-xi.vercel.app/
