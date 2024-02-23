@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Features() {
@@ -33,8 +34,13 @@ function Features() {
               key={item.id}
               className="bg-white p-10 flex flex-col items-center text-center space-y-5 rounded border border-darkGreen/40 group hover:bg-darkGreen duration-300"
             >
-              <div className="w-24 h-24 bg-darkGreen/70 p-3 rounded-full group-hover:bg-darkGreen duration-300 border-2 border-darkGreen group-hover:border-white">
-                <img src={item.img} alt={item.alt} />
+              <div className="w-28 h-28 bg-darkGreen/70 p-3 rounded-full group-hover:bg-darkGreen duration-300 border-2 border-darkGreen group-hover:border-white relative">
+                <Image
+                  src={item.img}
+                  alt={item.alt}
+                  fill={true}
+                  className="h-ful w-full object-cover p-5"
+                />
               </div>
               <h3 className="text-2xl text-darkGreen font-medium group-hover:text-white duration-300">
                 {item.title}

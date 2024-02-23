@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function StoryAbout() {
@@ -23,10 +24,11 @@ function StoryAbout() {
         </p>
       </div>
 
-      <div className="h-96 w-full rounded overflow-hidden border border-darkGreen/20">
-        <img
-          src="./images/about-chef.jpg"
+      <div className="h-96 w-full rounded overflow-hidden border border-darkGreen/20 relative">
+        <Image
+          src="/images/about-chef.jpg"
           alt="About Chef Image"
+          fill={true}
           className="h-full w-full object-cover hover:scale-105 duration-300"
         />
       </div>

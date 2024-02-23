@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function MainsMenu() {
@@ -14,10 +15,11 @@ function MainsMenu() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="h-96 md:h-[600px] w-full rounded overflow-hidden">
-            <img
+          <div className="h-96 md:h-[600px] w-full rounded overflow-hidden relative">
+            <Image
               src="/images/main-img.jpg"
               alt="Starter Image"
+              fill={true}
               className="h-full w-full object-cover"
             />
           </div>

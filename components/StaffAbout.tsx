@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function StaffAbout() {
@@ -25,9 +26,10 @@ function StaffAbout() {
             key={item.id}
             className="relative rounded-lg overflow-hidden h-[500px]"
           >
-            <img
+            <Image
               src={item.img}
               alt="Image"
+              fill={true}
               className="h-full w-full object-cover"
             />
 

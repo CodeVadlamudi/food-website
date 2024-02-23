@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -20,11 +21,12 @@ function Footer() {
       <div className="container">
         <div className="py-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-end">
           <div className="space-y-5 sm:col-span-2 lg:col-auto">
-            <Link href={"/"}>
-              <img
+            <Link href="/">
+              <Image
                 src="/images/food.png"
                 alt="Food Logo"
-                className="w-20 h-20 object-contain"
+                width={60}
+                height={60}
               />
             </Link>
             <p className="text-lg text-white">
@@ -80,7 +82,9 @@ function Footer() {
         </div>
 
         <div className="border-t border-white py-5 md:py-3 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-white text-lg">2024 &copy; All rights Reserved | Code Vadlamudi</p>
+          <p className="text-white text-lg">
+            2024 &copy; All rights Reserved | Code Vadlamudi
+          </p>
           <div>
             <SocialIcon
               network="instagram"

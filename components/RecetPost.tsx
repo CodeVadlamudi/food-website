@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import React from "react";
 
 function RecetPost() {
@@ -27,21 +28,25 @@ function RecetPost() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {recet__post.map((item) => (
           <div key={item.id}>
-            <div className="h-[550px] overflow-hidden rounded-lg border border-darkGreen/20">
-              <img
+            <div className="h-[550px] overflow-hidden rounded-lg border border-darkGreen/20 relative">
+              <Image
                 src={item.img}
                 alt={item.alt}
+                fill={true}
                 className="h-full w-full object-cover"
               />
             </div>
 
             <div className="py-5 space-y-5">
               <div className="flex items-center space-x-4">
-                <img
-                  src={item.avatar}
-                  alt={item.alt}
-                  className="w-16 object-contain"
-                />
+                <div className="w-16 relative">
+                  <Image
+                    src={item.avatar}
+                    alt={item.alt}
+                    fill={true}
+                    className="w-full object-contain"
+                  />
+                </div>
                 <h3 className="text-xl">{item.name}</h3>
               </div>
 

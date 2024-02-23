@@ -1,20 +1,23 @@
+import Image from "next/image";
 import React from "react";
 
 function ContentBlog() {
   return (
     <section className="my-24 px-5 2xl:px-0 space-y-10">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div className="rounded-lg overflow-hidden border border-darkGreen/40 h-96 w-full">
-          <img
+        <div className="rounded-lg overflow-hidden border border-darkGreen/40 h-96 w-full relative">
+          <Image
             src="/images/meat-img.jpg"
             alt="Meat Image"
+            fill={true}
             className="hover:scale-105 duration-300 h-full w-full object-cover"
           />
         </div>
-        <div className="rounded-lg overflow-hidden border border-darkGreen/40 h-96">
-          <img
+        <div className="rounded-lg overflow-hidden border border-darkGreen/40 h-96 relative">
+          <Image
             src="/images/powder-img.jpg"
             alt="Powder Image"
+            fill={true}
             className="hover:scale-105 duration-300 h-full w-full object-cover"
           />
         </div>

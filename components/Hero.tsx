@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Hero() {
@@ -5,10 +6,11 @@ function Hero() {
     <section className="bg-darkGreen py-24 px-5 2xl:px-0">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 relative">
-          <div className="rounded-lg overflow-hidden border border-white/20 h-[550px]">
-            <img
+          <div className="rounded-lg overflow-hidden border border-white/20 h-[550px] relative">
+            <Image
               src="/images/hero.jpg"
               alt="Hero Image"
+              fill={true}
               className="w-full h-full object-cover"
             />
           </div>
@@ -24,17 +26,19 @@ function Hero() {
             </p>
 
             <div className="grid grid-cols-2 gap-5 lg:absolute bottom-0 inset-x-0">
-              <div className="h-60 rounded-lg overflow-hidden border border-white/20">
-                <img
-                  src="./images/hero2.jpg"
+              <div className="h-60 rounded-lg overflow-hidden border border-white/20 relative">
+                <Image
+                  src="/images/hero2.jpg"
                   alt="Image"
+                  fill={true}
                   className="h-full w-full object-cover hover:scale-105 duration-300"
                 />
               </div>
-              <div className="h-60 rounded-lg overflow-hidden border border-white/20">
-                <img
-                  src="./images/hero3.jpg"
+              <div className="h-60 rounded-lg overflow-hidden border border-white/20 relative">
+                <Image
+                  src="/images/hero3.jpg"
                   alt="Image"
+                  fill={true}
                   className="h-full w-full object-cover hover:scale-105 duration-300"
                 />
               </div>

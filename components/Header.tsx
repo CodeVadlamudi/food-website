@@ -22,9 +22,9 @@ function Header() {
   return (
     <header className="p-5 2xl:px-0 shadow-sm shadow-white/30">
       <div className="container flex items-center justify-between">
-        <Link href={"/"}>
+        <Link href="/">
           <Image
-            src="/images/food-logo.png"
+            src="/images/food.png"
             alt="Food Logo"
             width={60}
             height={46}

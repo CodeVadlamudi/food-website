@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function AddressContact() {
@@ -22,11 +23,13 @@ function AddressContact() {
           <address className="text-2xl">Andhra Pradesh, IND</address>
         </div>
 
-        <div className="rounded overflow-hidden h-96 w-full">
-          <img
+        <div className="rounded overflow-hidden h-96 w-full relative">
+          <Image
             src="/images/address-img.jpg"
             alt="Address Image"
+            fill={true}
             className="h-full w-full object-cover"
+            priority
           />
         </div>
       </div>

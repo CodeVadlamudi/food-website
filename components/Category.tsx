@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import React from "react";
 
 function Category() {
@@ -10,14 +11,15 @@ function Category() {
             Calories Energy Balance
           </h2>
           <p className="text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
           <div className="rounded-lg overflow-hidden relative h-96">
-            <img
+            <Image
               src="/images/c1.jpg"
               alt="Image"
+              fill={true}
               className="h-full w-full object-cover"
             />
             <div className="absolute bottom-0 py-10 px-10 bg-gradient-to-t from-black to-transparent w-full text-white flex items-center gap-5">
@@ -29,9 +31,10 @@ function Category() {
           </div>
 
           <div className="rounded-lg overflow-hidden relative h-96">
-            <img
+            <Image
               src="/images/c2.jpg"
               alt="Image"
+              fill={true}
               className="h-full w-full object-cover"
             />
             <div className="absolute bottom-0 py-10 px-10 bg-gradient-to-t from-black to-transparent w-full text-white flex items-center gap-5">
@@ -43,9 +46,10 @@ function Category() {
           </div>
 
           <div className="rounded-lg overflow-hidden relative h-96">
-            <img
+            <Image
               src="/images/c3.jpg"
               alt="Image"
+              fill={true}
               className="h-full w-full object-cover"
             />
             <div className="absolute bottom-0 py-10 px-10 bg-gradient-to-t from-black to-transparent w-full text-white flex items-center gap-5">
